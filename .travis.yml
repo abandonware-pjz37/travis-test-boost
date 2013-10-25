@@ -1,8 +1,8 @@
 language:
     - objective-c
 
-compiler:
-    - clang
+install:
+    - brew install cmake
 
 script:
     - mkdir _builds
