@@ -1,11 +1,9 @@
 language:
     - objective-c
 
-compiler:
-    - clang
-
-before_install:
-    - sudo apt-get install libboost-dev
+install:
+    - brew install cmake
+    - brew install boost
 
 script:
     - mkdir _builds
