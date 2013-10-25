@@ -4,6 +4,9 @@ language:
 compiler:
     - gcc
 
+before_install:
+    - sudo apt-get install libboost-dev
+
 script:
     - mkdir _builds
     - cd _builds
