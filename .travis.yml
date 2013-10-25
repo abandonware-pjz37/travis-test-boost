@@ -1,8 +1,8 @@
 language:
-    - cpp
+    - objective-c
 
 compiler:
-    - gcc
+    - clang
 
 script:
     - mkdir _builds
