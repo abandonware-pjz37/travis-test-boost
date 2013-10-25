@@ -1,7 +1,7 @@
 Builds done for 3 compilers:
 * `linux.gcc` (language: cpp, compiler: gcc)
 * `linux.clang` (language: cpp, compiler: clang)
-* `mac.clang` (language: objective-c, compiler: clang)
+* `mac.clang` (language: objective-c)
 
 ### Tests and branch names:
 * Try to find boost and include `boost/config.hpp` (**failed**: by default boost is not installed):
