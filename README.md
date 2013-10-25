@@ -1,27 +1,30 @@
-Builds done for 3 compilers: gcc (linux), clang (linux), clang (mac os x).
-Below names of branches.
+Builds done for 3 compilers:
+* `linux.gcc` (language: cpp, compiler: gcc)
+* `linux.clang` (language: cpp, compiler: clang)
+* `mac.clang` (language: objective-c, compiler: clang)
 
-* try to find boost and include boost/config.hpp (failed: by default boost is not installed):
- * master
- * clang
- * mac
+### Tests and branch names:
+* Try to find boost and include `boost/config.hpp` (**failed**: by default boost is not installed):
+ * `linux.gcc`
+ * `linux.clang`
+ * `mac.clang`
 
-* install boost fix it (passed):
- * boost.install
- * clang.boost.install
- * mac.install
+* Install boost fix it (**passed**):
+ * `linux.gcc.boost.install`
+ * `linux.clang.boost.install`
+ * `mac.clang.boost.install`
 
-* try to detect boost 1.53 (failed: default version is lower):
- * boost-1.53
- * clang.boost-1.53
- * mac.boost-1.53
+* Try to detect boost 1.53 (**failed**: default version is lower):
+ * `linux.gcc.boost-1.53`
+ * `linux.clang.boost-1.53`
+ * `mac.clang.boost-1.53`
 
-* try to install boost 1.53 explicitly (failed: no such package):
- * boost-1.53.explicit
- * clang.boost-1.53.explicit
- * mac.boost-1.53.explicit
+* Try to install boost 1.53 explicitly (**failed**: no such package):
+ * `linux.gcc.boost-1.53.explicit`
+ * `linux.clang.boost-1.53.explicit`
+ * `mac.clang.boost-1.53.explicit`
 
-* add external repository for boost-1.53 (passed):
- * boost-1.53.external
- * clang.boost-1.53.external
- * mac.boost-1.53.external
+* Add external repository for boost-1.53 (**passed**):
+ * `linux.gcc.boost-1.53.external`
+ * `linux.clang.boost-1.53.external`
+ * `mac.clang.boost-1.53.external`
