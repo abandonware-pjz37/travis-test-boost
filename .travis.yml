@@ -3,7 +3,7 @@ language:
 
 install:
     - brew install cmake
-    - brew install boost
+    - brew install boost --with-c++11
 
 script:
     - mkdir _builds
