@@ -3,7 +3,7 @@ language:
 
 before_install:
     - brew update
-    # - brew doctor
+    # - brew doctor # report Xcode need to update and exit with 1
     - brew --config
 
 install:
