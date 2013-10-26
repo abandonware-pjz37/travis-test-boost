@@ -10,6 +10,18 @@ Builds done for 3 compilers:
 * `mac.clang.boost.install` (**passed**)
 [![Build Status](https://travis-ci.org/travis-ci-tester/travis-test-boost.png?branch=mac.clang.boost.install)](https://travis-ci.org/travis-ci-tester/travis-test-boost)
 
+* `mac.clang.boost-libcxx.install` (**failed**: brew install hangs):
+[![Build Status](https://travis-ci.org/travis-ci-tester/travis-test-boost.png?branch=mac.clang.boost-libcxx.install)](https://travis-ci.org/travis-ci-tester/travis-test-boost)
+
+```
+> brew install boost --with-c++11
+...
+No output has been received in the last 10 minutes, this potentially indicates a stalled build or something wrong with the build itself.
+The build has been terminated
+```
+*Workaround*: link boost libraries dynamically
+
+
 ### Tests linux
 * Try to find boost and include `boost/config.hpp` (**failed**: by default boost is not installed):
  * `linux.gcc`
