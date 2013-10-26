@@ -8,7 +8,7 @@ before_install:
 
 install:
     - brew install cmake
-    - brew install boost --with-c++11 -v
+    - brew install boost --with-c++11 # if try with '-v' output will be 10'000 lines...
 
 script:
     - mkdir _builds
