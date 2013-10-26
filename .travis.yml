@@ -1,9 +1,14 @@
 language:
     - objective-c
 
+before_install:
+    - brew update
+    - brew doctor
+    - brew config
+
 install:
     - brew install cmake
-    - brew install boost --with-c++11 -ftemplate-depth=1024 -v
+    - brew install boost --with-c++11 -v
 
 script:
     - mkdir _builds
