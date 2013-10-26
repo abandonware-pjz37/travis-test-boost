@@ -4,7 +4,7 @@ language:
 before_install:
     - brew update
     # - brew doctor
-    - brew config
+    - brew --config
 
 install:
     - brew install cmake
