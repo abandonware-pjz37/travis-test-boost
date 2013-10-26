@@ -3,7 +3,7 @@ language:
 
 install:
     - brew install cmake
-    - brew install boost --with-c++11
+    - brew install boost --with-c++11 -ftemplate-depth=1024 -v
 
 script:
     - mkdir _builds
