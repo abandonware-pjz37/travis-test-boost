@@ -3,7 +3,7 @@ language:
 
 before_install:
     - brew update
-    - brew doctor
+    # - brew doctor
     - brew config
 
 install:
